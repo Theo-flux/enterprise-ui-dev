@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { v4 as id } from 'uuid';
+import { v4 as id } from 'uuid'
 
 export type Item = {
   id: string;

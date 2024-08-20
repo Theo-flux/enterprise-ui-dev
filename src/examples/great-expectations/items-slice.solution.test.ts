@@ -5,6 +5,7 @@ import reducer, {
   markAllAsUnpacked,
   update,
 } from './items-slice';
+import {it, expect} from 'vitest'
 
 it('returns an empty array as the initial state', () => {
   expect(reducer(undefined, { type: 'noop' })).toEqual([]);
