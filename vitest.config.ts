@@ -1,9 +1,11 @@
 import path from 'node:path';
 import { defineConfig, defaultExclude } from 'vitest/config';
 import configuration from './vite.config';
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
   ...configuration,
+  plugins: [tsconfigPaths()],
   resolve: {
     alias: {
       ...configuration?.resolve?.alias,
